@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/students', [StudentController::class, 'index'])->name('students');
 Route::get('/students/store', [StudentController::class, 'store'])->name('store');
+Route::get('/students/store/profile', [StudentController::class,'store_profile'])->name('storeProfile');
