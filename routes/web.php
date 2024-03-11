@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +14,5 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-Route::get('/students', [StudentController::class, 'index'])->name('students');
-Route::get('/students/store', [StudentController::class, 'store'])->name('store');
-Route::get('/students/store/profile', [StudentController::class,'store_profile'])->name('storeProfile');
 Route::get('/index',[UserController::class,'view'])->name('user-index');
+// Route::get('/toMany',[UserController::class,'show'])->name('user-toMany');

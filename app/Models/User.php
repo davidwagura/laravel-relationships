@@ -30,6 +30,12 @@ class User extends Authenticatable
         return $this->hasOne(Address::class);
     }
 
+    //An user can have many posts
+
+    public function User() {
+        return $this->hasMany(Post::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

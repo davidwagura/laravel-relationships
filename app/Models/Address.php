@@ -14,4 +14,8 @@ class Address extends Model
         'user_address',
         'user_id'
     ];
+    //An user has one address
+    public function getUserAddress(){
+        return $this->hasOne(Address::class);
+    }
 }
