@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function index() {
-        $stu = Student::find(1);
-        dd($stu);
+        $student = Student::find(1);
+        dd($student->profile);
     }
     public function store() {
         $student = new Student;

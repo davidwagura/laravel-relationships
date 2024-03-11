@@ -18,4 +18,8 @@ class Student extends Model
     {
         return $this->hasOne('App\Models\Profile');
     }
+     public function index() {
+        $student = Student::with('profile')->get();
+        dd($student);
+     }
 }

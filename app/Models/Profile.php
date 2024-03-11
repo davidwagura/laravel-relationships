@@ -17,6 +17,7 @@ class Profile extends Model
 
     public function student() 
     {
-        return $this->belongsTo('App\Models\Student');
+        // return $this->belongsTo('Model', 'foreign_key', 'owner_key'); 
+        return $this->belongsTo('App\Models\Student', 'student_id','id');
     }
 }
